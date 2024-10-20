@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Receipt Data</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Automatic Receipt Data</h2>
+        <ul>
+            <li><a href="#" class="active">🏠 Dashboard</a></li>
+            <li><a href="#">🛍 Orders</a></li>
+            <li><a href="#">🍴 Restaurants</a></li>
+            <li><a href="#">📊 Analytics</a></li>
+            <li><a href="#">👥 Customers</a></li>
+            <li><a href="#">📝 Reports</a></li>
+            <li><a href="#">🔐 Security</a></li>
+            <li><a href="#">👤 Profile</a></li>
+            <li><a href="#">📄 Help</a></li>
+            <li><a href="#">🚪 Sign Out</a></li>
+            <li><a href="#">⚙️ Settings</a></li>
+            
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Top Navbar -->
+        <nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="nav-icons">
+                <span class="notification-icon">🔔</span>
+                <span class="profile-icon">👤</span>
+            </div>
+        </nav>
+
+        <!-- Dashboard Stats -->
+        <section class="dashboard-stats">
+            <div class="stat-card">
+                <h3>Total Orders</h3>
+                <p>1,240</p>
+            </div>
+            <div class="stat-card">
+                <h3>Revenue</h3>
+                <p>114,560</p>
+            </div>
+            <div class="stat-card">
+                <h3>New Customers</h3>
+                <p>320</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pending Orders</h3>
+                <p>45</p>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="charts">
+            <div class="chart-container">
+                <h3>Orders Analytics</h3>
+                <canvas id="ordersChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Revenue Growth</h3>
+                <canvas id="revenueChart"></canvas>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
